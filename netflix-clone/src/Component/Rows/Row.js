@@ -2,19 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import "./row.css";
 import movieTrailer from "movie-trailer";
-import Youtube from "react-youtube";
+import YouTube from "react-youtube";
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovie] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
-  const base_url = "https:/image.tmdb.org/t/p/original";
+  const base_url = "https://image.tmdb.org/t/p/original";
 
   useEffect(() => {
     (async () => {
       try {
         console.log(fetchUrl);
-        const request = await axios.get(
-          `http://localhost:4000/api/${fetchUrl}`
-        );
+        const request = await axios.get(fetchUrl);
         console.log(request);
         setMovie(request.data.results);
       } catch (error) {
@@ -61,7 +59,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         ))}
       </div>
       <div style={{ padding: "40px" }}>
-        {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
+        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </div>
   );

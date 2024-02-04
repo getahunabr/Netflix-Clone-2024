@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import Netflixlog from "../../assest/images/580b57fcd9996e24bc43c529.png";
+import NetflixLog from "../../assest/images/580b57fcd9996e24bc43c529.png";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -12,7 +12,7 @@ const Header = () => {
         <div className="header_left">
           <ul>
             <li>
-              <img src={Netflixlog} alt="Netflixlog" width="100" />
+              <img src={NetflixLog} alt="Netflix Log" width="100" />
             </li>
             <li>Netflix</li>
             <li>Home</li>
