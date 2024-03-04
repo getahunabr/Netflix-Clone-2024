@@ -9,7 +9,7 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 5px;
 }
 .row_posters::-webkit-scrollbar {
   display: none;
@@ -24,7 +24,13 @@
   transform: scale(1.09);
 }
 .Row {
-  margin-left: 20px;
+  margin-left: 2px;
   color: white;
   /* margin-bottom: 100px; */
+}
+.Row h1 {
+  margin-top: 20px;
+
+  font-size: 1.2rem;
+  text-align: left;
 }

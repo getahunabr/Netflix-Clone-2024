@@ -26,8 +26,9 @@
   /* background-color: yellow; */
 }
 .header_left ul {
-  width: 140%;
+  width: 120%;
   display: flex;
+  /* justify-content: space-between; */
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -37,7 +38,7 @@
 .header_right ul {
   list-style: none;
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }

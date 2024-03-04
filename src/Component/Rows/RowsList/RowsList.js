@@ -1,6 +1,6 @@
 // import "./row.css";
-import Row from "../Row";
-import request from "../../../utils/request";
+import Row from "../Row.js";
+import request from "../../../utils/request.js";
 
 const RowsList = () => {
   return (

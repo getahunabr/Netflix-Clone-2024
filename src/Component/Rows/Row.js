@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "../../utils/axios";
+import axios from "../../utils/axios.js";
 import "./row.css";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
@@ -58,7 +58,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           />
         ))}
       </div>
-      <div style={{ padding: "40px" }}>
+      <div style={{}}>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </div>
